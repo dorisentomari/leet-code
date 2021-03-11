@@ -1,0 +1,3 @@
+const removeNthFromEnd = (head, n) => {
+
+};
