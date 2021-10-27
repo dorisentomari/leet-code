@@ -1,0 +1,27 @@
+{
+  "name": "leet-code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "eslint": "eslint --fix ./**/*.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weizhiqimail/leet-code.git"
+  },
+  "keywords": [],
+  "author": "weizhiqimail",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weizhiqimail/leet-code/issues"
+  },
+  "homepage": "https://github.com/weizhiqimail/leet-code#readme",
+  "devDependencies": {
+    "eslint": "^8.1.0",
+    "jest": "^27.3.1"
+  }
+}
