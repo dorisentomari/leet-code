@@ -6,13 +6,23 @@
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/palindrome-number
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
-**/
+***/
 
+// 使用字符串拆分反转
+/**
+ * @param {number} num
+ * @return {boolean}
+ */
 function palindromeNumber1(num) {
     const str = num.toString().split('').reverse().join('');
     return num.toString() === str;
 }
 
+// 从字符串的第n个和倒数第n个不断比较，如果都相等，那么就是回文。
+/**
+ * @param {number} num
+ * @return {boolean}
+ */
 function palindromeNumber2(num) {
     if (num < 0) {
         return false;
@@ -29,7 +39,12 @@ function palindromeNumber2(num) {
     return true;
 }
 
-function palindromeNumber(num) {
+// 数字除以 10 取余，新数字乘 10 加余数，最终两个数字相等，就是回文
+/**
+ * @param {number} num
+ * @return {boolean}
+ */
+function palindromeNumber3(num) {
     if (num < 0) {
         return false;
     }
@@ -43,8 +58,9 @@ function palindromeNumber(num) {
     return original === reverse;
 }
 
-
-console.log(palindromeNumber(12345));
-// console.log(palindromeNumber(121));
-// console.log(palindromeNumber(0));
+module.exports = {
+    palindromeNumber1,
+    palindromeNumber2,
+    palindromeNumber3,
+};
 

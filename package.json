@@ -7,7 +7,8 @@
   },
   "scripts": {
     "eslint": "eslint --fix ./**/*.js",
-    "test": "jest"
+    "test": "jest",
+    "open:test": "cd lcov-report && ..\\\\\\node_modules\\.bin\\http-server -o"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/weizhiqimail/leet-code#readme",
   "devDependencies": {
     "eslint": "^8.1.0",
+    "http-server": "^14.0.0",
     "jest": "^27.3.1"
   }
 }

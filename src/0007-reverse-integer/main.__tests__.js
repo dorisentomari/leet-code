@@ -10,6 +10,6 @@ describe('测试整数反转', () => {
             expect(fn(120)).toEqual(21);
             expect(fn(-(2 ** 31) - 1)).toEqual(0);
             expect(fn(2 ** 31 + 1)).toEqual(0);
-        })
+        });
     });
 });

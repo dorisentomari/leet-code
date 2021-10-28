@@ -12,5 +12,8 @@ module.exports = {
         "semi": ["warn", "always"],
         "indent": ["warn", 4],
         "no-unused-vars": "off",
+        "no-undef": "off",
+        "no-constant-condition": "off",
+        "no-prototype-builtins": "off",
     }
 };
